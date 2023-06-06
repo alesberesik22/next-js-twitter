@@ -1,0 +1,22 @@
+.side-nav-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 200px;
+  border-right: 1px solid rgba(128, 128, 128, 0.24);
+  .side-nav-container-items{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+    flex-direction: column;
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+}
