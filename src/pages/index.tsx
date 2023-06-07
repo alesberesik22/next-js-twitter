@@ -2,6 +2,7 @@ import { type NextPage } from "next";
 import styles from './index.module.scss'
 import { api } from "~/utils/api";
 import NewTweetForm from "~/components/NewTweetForm/NewTweetForm";
+import RecentTweets from "~/components/RecentTweets/RecentTweets";
 
 const Home: NextPage = () => {
 
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
               <h1>Home</h1>
           </header>
           <NewTweetForm/>
+          <RecentTweets/>
       </div>
   );
 };

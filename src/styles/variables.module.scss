@@ -1,0 +1,10 @@
+$border: 1px solid rgba(128, 128, 128, 0.24);
+$primary-color: #87CEEB;
+$secondary-color: #00BFFF;
+$transition: all 0.9s cubic-bezier(0.13, 0.17, 0.03, 0.5);
+
+:export {
+  border: $border;
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color
+}

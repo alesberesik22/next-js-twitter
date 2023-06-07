@@ -1,16 +1,13 @@
 import React from 'react';
-import styles from './NewTweetForm.module.scss'
-import Button from "~/components/Button/Button";
+import {useSession} from "next-auth/react";
+import Form from "~/components/NewTweetForm/Form/Form";
 
 const NewTweetForm = () => {
-    return (
-        <form className={styles['new-tweet-form']}>
-            <div className={styles['new-tweet-form-textarea']}>
-                <textarea placeholder={`What's happening`}></textarea>
-            </div>
-            <Button type={'button'} style={{width: '100px',alignSelf:'flex-end'}}>Tweet</Button>
-        </form>
-    );
+    const session = useSession();
+    if (session.status !== 'authenticated') return null;
+
+    return <Form/>
+
 };
 
 export default NewTweetForm;

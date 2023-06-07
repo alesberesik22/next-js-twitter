@@ -18,11 +18,11 @@ const SideNav = () => {
                 )}
                 {user === null ? (
                     <li>
-                        <button onClick={() => signIn()}>Log in</button>
+                        <button onClick={() => signOut()}>Log out</button>
                     </li>
                 ):(
                     <li>
-                        <button onClick={() => signOut()}>Log out</button>
+                        <button onClick={() => signIn()}>Log in</button>
                     </li>
                 )}
             </ul>
